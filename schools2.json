@@ -1,0 +1,663 @@
+{
+  "SchoolList": [
+      {
+        "Ahuimanu Elementary":
+         "Lat": 21.4350634,
+        "Long": -157.8308883
+      },
+      "Aiea Elementary": {
+        "Lat": 21.375774,
+        "Long": -157.9277466
+      },
+      "Aikahi Elementary": {
+        "Lat": 21.4248391,
+        "Long": -157.7496645
+      },
+      "Aina Haina Elementary": {
+        "Lat": 21.2795361,
+        "Long": -157.7558632
+      },
+      "Ala Wai Elementary": {
+        "Lat": 21.2848251,
+        "Long": -157.826864
+      },
+      "Aliamanu Elementary": {
+        "Lat": 21.3430353,
+        "Long": -157.9141278
+      },
+      "Aliiolani Elementary": {
+        "Lat": 21.286659,
+        "Long": -157.804752
+      },
+      "Alvah A. Scott Elementary": {
+        "Lat": 21.3825668,
+        "Long": -157.9327274
+      },
+      "American Renaissance Academy, Kapolei": {
+        "Lat": 21.3148261,
+        "Long": -158.0742473
+      },
+      "Anuenue School": {
+        "Lat": 21.304287,
+        "Long": -157.789582
+      },
+      "Assets School, Salt Lake": {
+        "Lat": 21.340465,
+        "Long": -157.934091
+      },
+      "August Ahrens Elementary": {
+        "Lat": 21.3932155,
+        "Long": -158.0025654
+      },
+      "Barbers Point Elementary": {
+        "Lat": 21.3221031,
+        "Long": -158.0817055
+      },
+      "Education Laboratory NCPCS": {
+        "Lat": 21.298819,
+        "Long": -157.821687
+      },
+      "Enchanted Lake Elementary": {
+        "Lat": 21.3830093,
+        "Long": -157.7317193
+      },
+      "Ewa Beach Elementary": {
+        "Lat": 21.3147929,
+        "Long": -158.0151529
+      },
+      "Ewa Elementary": {
+        "Lat": 21.3147929,
+        "Long": -158.0151529
+      },
+      "Fern Elementary": {
+        "Lat": 40.6274009,
+        "Long": -121.9926817
+      },
+      "Hahaione Elementary": {
+        "Lat": 21.2964834,
+        "Long": -157.7099374
+      },
+      "Hale Kula Elementary": {
+        "Lat": 21.4991379,
+        "Long": -158.0584743
+      },
+      "Haleiwa Elementary": {
+        "Lat": 21.5848064,
+        "Long": -158.1138527
+      },
+      "Hanahau'oli School, Makiki": {
+        "Lat": 21.3075337,
+        "Long": -157.8316041
+      },
+      "Hanalani Schools, Mililani": {
+        "Lat": 21.4408508,
+        "Long": -158.0093073
+      },
+      "Hauula Elementary": {
+        "Lat": 21.6063138,
+        "Long": -157.9082149
+      },
+      "Hawaii Baptist Academy, Honolulu": {
+        "Lat": 21.3656165,
+        "Long": -157.9024148
+      },
+      "Heeia Elementary": {
+        "Lat": 21.4179576,
+        "Long": -157.8084324
+      },
+      "Helemano Elementary": {
+        "Lat": 21.5141922,
+        "Long": -158.0232185
+      },
+      "Hickam Elementary": {
+        "Lat": 21.3436813,
+        "Long": -157.9621208
+      },
+      "Ho`ala School, Wahiawa": {
+        "Lat": 21.4979423,
+        "Long": -158.0234686
+      },
+      "Hokulani Elementary": {
+        "Lat": 21.291323,
+        "Long": -157.8131415
+      },
+      "Holomua Elementary": {
+        "Lat": 21.3392062,
+        "Long": -158.0200561
+      },
+      "Holy Family Catholic Academy, Honolulu": {
+        "Lat": 21.3388443,
+        "Long": -157.9306569
+      },
+      "Hongwanji Mission School, Nuuanu": {
+        "Lat": 21.3166419,
+        "Long": -157.852879
+      },
+      "Honolulu Waldorf School, Kahala": {
+        "Lat": 21.2794826,
+        "Long": -157.78732
+      },
+      "Honowai Elementary": {
+        "Lat": 21.383968,
+        "Long": -158.0263219
+      },
+      "Hookele Elementary (Opening Fall 2015)": {
+        "Lat": 21.327347,
+        "Long": -158.071981
+      },
+      "Iliahi Elementary": {
+        "Lat": 21.5061104,
+        "Long": -157.9987696
+      },
+      "Iolani School, Honolulu": {
+        "Lat": 21.2853956,
+        "Long": -157.8237211
+      },
+      "Iroquois Point Elementary": {
+        "Lat": 21.3196571,
+        "Long": -157.9822744
+      },
+      "Island Pacific Academy, Kapolei": {
+        "Lat": 21.332947,
+        "Long": -158.080409
+      },
+      "Jefferson Elementary": {
+        "Lat": 21.27364,
+        "Long": -157.818813
+      },
+      "Ka Waihona o ka Na`auao NCPCS": {
+        "Lat": 21.379741,
+        "Long": -158.144036
+      },
+      "Kaaawa Elementary": {
+        "Lat": 21.549537,
+        "Long": -157.847258
+      },
+      "Kaahumanu Elementary": {
+        "Lat": 21.3026631,
+        "Long": -157.8436966
+      },
+      "Kaala Elementary": {
+        "Lat": 21.4945156,
+        "Long": -158.0366364
+      },
+      "Kaelepulu Elementary": {
+        "Lat": 21.3811612,
+        "Long": -157.7425203
+      },
+      "Kaewai Elementary": {
+        "Lat": 21.3451325,
+        "Long": -157.8694619
+      },
+      "Kahala Elementary": {
+        "Lat": 21.2735645,
+        "Long": -157.7848124
+      },
+      "Kahaluu Elementary": {
+        "Lat": 21.4570983,
+        "Long": -157.8457961
+      },
+      "Kahuku Elementary": {
+        "Lat": 21.6744941,
+        "Long": -157.9512452
+      },
+      "Kailua Elementary": {
+        "Lat": 21.3948462,
+        "Long": -157.7407823
+      },
+      "Kaimiloa Elementary": {
+        "Lat": 21.3197951,
+        "Long": -158.0085995
+      },
+      "Kainalu Elementary": {
+        "Lat": 21.4129914,
+        "Long": -157.7490234
+      },
+      "Kaiulani Elementary": {
+        "Lat": 21.3211325,
+        "Long": -157.8672238
+      },
+      "Kaleiopuu Elementary": {
+        "Lat": 21.3918768,
+        "Long": -158.0273287
+      },
+      "Kalihi Elementary": {
+        "Lat": 21.3529824,
+        "Long": -157.8614606
+      },
+      "Kalihi-kai Elementary": {
+        "Lat": 21.3261413,
+        "Long": -157.8781686
+      },
+      "Kalihi-uka Elementary": {
+        "Lat": 21.3454425,
+        "Long": -157.8619087
+      },
+      "Kalihi-waena Elementary": {
+        "Lat": 21.3361632,
+        "Long": -157.8756438
+      },
+      "Kamaile Academy PCS": {
+        "Lat": 21.4569334,
+        "Long": -158.1950857
+      },
+      "Kamehameha Schools, Honolulu": {
+        "Lat": 21.339662,
+        "Long": -157.8661093
+      },
+      "Kamiloiki Elementary": {
+        "Lat": 21.2943925,
+        "Long": -157.6853845
+      },
+      "Kaneohe Elementary": {
+        "Lat": 21.3963839,
+        "Long": -157.7960036
+      },
+      "Kanoelani Elementary": {
+        "Lat": 21.4162191,
+        "Long": -157.9987194
+      },
+      "Kapalama Elementary": {
+        "Lat": 21.335199,
+        "Long": -157.869138
+      },
+      "Kapolei Elementary": {
+        "Lat": 21.3340877,
+        "Long": -158.064671
+      },
+      "Kapunahala Elementary": {
+        "Lat": 21.4080662,
+        "Long": -157.8035571
+      },
+      "Kauluwela Elementary": {
+        "Lat": 21.3189879,
+        "Long": -157.8588593
+      },
+      "Kawaiaha'o Church School, Downtown Honolulu": {
+        "Lat": 21.3032786,
+        "Long": -157.8576196
+      },
+      "Ke Kula 'o Samuel M. Kamakau Lab PCS": {
+        "Lat": 21.3718074,
+        "Long": -157.725572
+      },
+      "Keolu Elementary": {
+        "Lat": 21.3718074,
+        "Long": -157.735901
+      },
+      "Keoneula Elementary": {
+        "Lat": 21.3223558,
+        "Long": -158.0205997
+      },
+      "Kipapa Elementary": {
+        "Lat": 21.4606607,
+        "Long": -158.0117209
+      },
+      "Koko Head Elementary": {
+        "Lat": 21.2745934,
+        "Long": -157.7052202
+      },
+      "Kuhio Elementary": {
+        "Lat": 21.2891061,
+        "Long": -157.8198149
+      },
+      "Laie Elementary": {
+        "Lat": 21.6497101,
+        "Long": -157.9248083
+      },
+      "Lanakila Elementary": {
+        "Lat": 21.393589,
+        "Long": -158.000082
+      },
+      "Lanikai Elementary PCS": {
+        "Lat": 21.393797,
+        "Long": -157.725572
+      },
+      "Le Jardin Academy, Kailua": {
+        "Lat": 21.3796646,
+        "Long": -157.7663734
+      },
+      "Lehua Elementary": {
+        "Lat": 21.3885978,
+        "Long": -157.9721209
+      },
+      "Leihoku Elementary": {
+        "Lat": 21.4388749,
+        "Long": -158.1742924
+      },
+      "Liholiho Elementary": {
+        "Lat": 21.2791099,
+        "Long": -157.805903
+      },
+      "Likelike Elementary": {
+        "Lat": 21.3248306,
+        "Long": -157.8640351
+      },
+      "Linapuni Elementary": {
+        "Lat": 21.3387847,
+        "Long": -157.8774089
+      },
+      "Lincoln Elementary": {
+        "Lat": 21.312909,
+        "Long": -157.840279
+      },
+      "Lunalilo Elementary": {
+        "Lat": 21.2930322,
+        "Long": -157.8329468
+      },
+      "Ma`ema`e Elementary": {
+        "Lat": 21.328438,
+        "Long": -157.847802
+      },
+      "Maili Elementary": {
+        "Lat": 21.4449797,
+        "Long": -158.1850514
+      },
+      "Makaha Elementary": {
+        "Lat": 21.4707025,
+        "Long": -158.2120192
+      },
+      "Makakilo Elementary": {
+        "Lat": 21.3442281,
+        "Long": -158.0845688
+      },
+      "Makalapa Elementary": {
+        "Lat": 21.3618575,
+        "Long": -157.9284238
+      },
+      "Manana Elementary": {
+        "Lat": 21.4082823,
+        "Long": -157.9712077
+      },
+      "Manoa Elementary": {
+        "Lat": 21.3175125,
+        "Long": -157.8085081
+      },
+      "Maryknoll School, Honolulu": {
+        "Lat": 21.3009766,
+        "Long": -157.830637
+      },
+      "Mauka Lani Elementary": {
+        "Lat": 21.3585467,
+        "Long": -158.083771
+      },
+      "Maunawili Elementary": {
+        "Lat": 21.3769514,
+        "Long": -157.7520737
+      },
+      "Mid-Pacific Institute, Honolulu": {
+        "Lat": 21.3033584,
+        "Long": -157.817112
+      },
+      "Mililani Ike Elementary": {
+        "Lat": 21.48013,
+        "Long": -157.9851192
+      },
+      "Mililani Mauka Elementary": {
+        "Lat": 21.4711131,
+        "Long": -158.0011466
+      },
+      "Mililani Uka Elementary": {
+        "Lat": 21.4371214,
+        "Long": -158.0147395
+      },
+      "Mililani Waena Elementary": {
+        "Lat": 21.4556065,
+        "Long": -158.0099584
+      },
+      "Moanalua Elementary School": {
+        "Lat": 21.3490022,
+        "Long": -157.8914666
+      },
+      "Mokapu Elementary": {
+        "Lat": 21.4434471,
+        "Long": -157.749301
+      },
+      "Mokulele Elementary": {
+        "Lat": 21.343218,
+        "Long": -157.941284
+      },
+      "Momilani Elementary": {
+        "Lat": 21.4130248,
+        "Long": -157.9545275
+      },
+      "Montessori Community School, Makiki": {
+        "Lat": 21.3085681,
+        "Long": -157.8364007
+      },
+      "Myron B. Thompson Academy, Honolulu": {
+        "Lat": 21.3076466,
+        "Long": -157.8597254
+      },
+      "Nanaikapono Elementary": {
+        "Lat": 21.3828023,
+        "Long": -158.1436894
+      },
+      "Nanakuli Elementary": {
+        "Lat": 21.387626,
+        "Long": -158.133742
+      },
+      "Nimitz Elementary": {
+        "Lat": 21.341047,
+        "Long": -157.935464
+      },
+      "Noelani Elementary": {
+        "Lat": 21.3060264,
+        "Long": -157.8122173
+      },
+      "Nu`uanu Elementary": {
+        "Lat": 21.3360015,
+        "Long": -157.8352761
+      },
+      "Our Lady of Good Counsel, Pearl": {
+        "Lat": 21.4054621,
+        "Long": -157.9648284
+      },
+      "Our Lady of Perpetual Health, Ewa Beach": {
+        "Lat": 21.3176934,
+        "Long": -158.0081164
+      },
+      "Our Savior Lutheran, Aiea": {
+        "Lat": 21.383253,
+        "Long": -157.93721
+      },
+      "Palisades Elementary": {
+        "Lat": 21.4286111,
+        "Long": -157.956111
+      },
+      "Palolo Elementary": {
+        "Lat": 21.29978,
+        "Long": -157.7921946
+      },
+      "Parker Elementary": {
+        "Lat": 35.3528145,
+        "Long": -114.0440557
+      },
+      "Pauoa Elementary": {
+        "Lat": 21.3185127,
+        "Long": -157.8439058
+      },
+      "Pearl Harbor Elementary": {
+        "Lat": 21.3464409,
+        "Long": -157.9294772
+      },
+      "Pearl Harbor Kai Elementary": {
+        "Lat": 21.3487456,
+        "Long": -157.9378361
+      },
+      "Pearl Ridge Elementary": {
+        "Lat": 21.3888525,
+        "Long": -157.944974
+      },
+      "Pohakea Elementary": {
+        "Lat": 21.3139542,
+        "Long": -158.0102158
+      },
+      "Pope Elementary": {
+        "Lat": 32.7472959,
+        "Long": -97.14572729999999
+      },
+      "Punahou School, Honolulu": {
+        "Lat": 21.3030872,
+        "Long": -157.8279169
+      },
+      "Puohala Elementary": {
+        "Lat": 21.40978,
+        "Long": -157.7908349
+      },
+      "Puuhale Elementary": {
+        "Lat": 21.3274377,
+        "Long": -157.8844627
+      },
+      "Red Hill Elementary": {
+        "Lat": 36.35466,
+        "Long": -118.28092
+      },
+      "Royal Elementary": {
+        "Lat": 21.312296,
+        "Long": -157.853671
+      },
+      "Sacred Hearts Academy, Honolulu": {
+        "Lat": 21.285976,
+        "Long": -157.8066026
+      },
+      "Saint Andrew's Priory School for Girls, Honolulu": {
+        "Lat": 21.3069444,
+        "Long": -157.8583333
+      },
+      "Salt Lake Elementary": {
+        "Lat": 21.3516979,
+        "Long": -157.9115188
+      },
+      "Scott Elementary": {
+        "Lat": 32.9608856,
+        "Long": -96.3414499
+      },
+      "Shafter Elementary": {
+        "Lat": 21.3420187,
+        "Long": -157.8849124
+      },
+      "Solomon Elementary": {
+        "Lat": 21.4901401,
+        "Long": -158.0728555
+      },
+      "St.Ann 's Model School, Kaneohe": {
+        "Lat": 21.4216967,
+        "Long": -157.8059309
+      },
+      "St. Anthony School, Kailua": {
+        "Lat": 21.4005032,
+        "Long": -157.7392969
+      },
+      "St. Elizabeth School, Aiea": {
+        "Lat": 21.3767865,
+        "Long": -157.9303277
+      },
+      "St. Francis School, Manoa": {
+        "Lat": 21.3038705,
+        "Long": -157.8120084
+      },
+      "St. John Vianney School, Kailua": {
+        "Lat": 21.3797322,
+        "Long": -157.728996
+      },
+      "St. John the Baptist Catholic School": {
+        "Lat": 37.4261647,
+        "Long": -121.9061239
+      },
+      "St. Joseph School, Waipahu": {
+        "Lat": 21.3826583,
+        "Long": -158.0080946
+      },
+      "St. Mark Lutheran School, Kaneohe": {
+        "Lat": 21.4078567,
+        "Long": -157.7985691
+      },
+      "St. Michael School, Waialua": {
+        "Lat": 21.5690757,
+        "Long": -158.1217361
+      },
+      "St. Patrick School, Kaimuki": {
+        "Lat": 21.2845723,
+        "Long": -157.8061437
+      },
+      "Sunset Beach Elementary": {
+        "Lat": 21.663772,
+        "Long": -158.0494972
+      },
+      "The Children's House, Pearl": {
+        "Lat": 21.4153174,
+        "Long": -157.9622503
+      },
+      "Trinity Christian School, Kailua": {
+        "Lat": 21.3750592,
+        "Long": -157.7641536
+      },
+      "Voyager PCS": {
+        "Lat": 21.3022608,
+        "Long": -157.8610043
+      },
+      "Wahiawa Elementary": {
+        "Lat": 21.5050104,
+        "Long": -158.0177387
+      },
+      "Waiahole Elementary": {
+        "Lat": 21.4833032,
+        "Long": -157.8518989
+      },
+      "Waialae Elementary PCS": {
+        "Lat": 21.276856,
+        "Long": -157.792214
+      },
+      "Waialua Elementary": {
+        "Lat": 21.5754201,
+        "Long": -158.1215644
+      },
+      "Waianae Elementary": {
+        "Lat": 21.4449797,
+        "Long": -158.1850514
+      },
+      "Waiau Elementary": {
+        "Lat": 21.3987456,
+        "Long": -157.9533602
+      },
+      "Waikele Elementary": {
+        "Lat": 21.4021136,
+        "Long": -158.0123878
+      },
+      "Waikiki Elementary": {
+        "Lat": 21.2681731,
+        "Long": -157.814361
+      },
+      "Waimalu Elementary": {
+        "Lat": 21.3903944,
+        "Long": -157.9496374
+      },
+      "Waimanalo Elementary & Intermediate": {
+        "Lat": 21.3446781,
+        "Long": -157.7151815
+      },
+      "Waipahu Elementary": {
+        "Lat": 21.3848747,
+        "Long": -158.0159745
+      },
+      "Webling Elementary": {
+        "Lat": 21.3811274,
+        "Long": -157.9200395
+      },
+      "Wheeler Elementary": {
+        "Lat": 41.1915887,
+        "Long": -96.1933299
+      },
+      "Wilson Elementary": {
+        "Lat": 37.9784092,
+        "Long": -121.2982491
+      },
+      "Windward Nazarene Academy, Kaneohe": {
+        "Lat": 21.4044961,
+        "Long": -157.7899158
+      }
+    }
+  ]
+}
+
