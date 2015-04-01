@@ -2,40 +2,40 @@ var express    = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/Keiki_Corner');
+mongoose.connect('mongodb://localhost/Test');
 var db = mongoose.connection;
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 var cors = require('cors');
 var url = require('url');
 
-var schoolSchema = new Schema({
-  school: String,
-  latitude: Number,
-  longitude: Number,
-  pledges: [{ type: Schema.Types.ObjectId, ref: 'Pledge'}]
-});
-
-var pledgeSchema = new Schema({
-  _school : {type: Number, ref: 'School'},
+var Pledges = new Schema({
   name: String,
   initial: String,
-  pledge: String,
+  pledgeType: String,
   date: { type: Date, default: Date.now }
 });
 
+var schoolSchema = new Schema({
+  name: String,
+  latitude: Number,
+  longitude: Number,
+  pledges: [Pledges]
+});
+
 var School = mongoose.model('School', schoolSchema);
-var Pledge = mongoose.model('Pledge', pledgeSchema);
+var Pledge = mongoose.model('Pledge', Pledges);
 
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {
   console.log('Mongo connected');
-
+  /*
   var result = School.find( function(err, schools) {
     if (err) return console.error(err);
     console.log(schools);
   });
+  */
 
   //parseSchools();
   //var pledgeexample = new Pledge({ name: 'Alex', initial: 'J', pledge: 'gardener' });
@@ -59,7 +59,7 @@ app.use(function (req, res, next) {
 app.listen(8080);
 app.get('/Schools', function(req, res){
   console.log(req.body);
-  getPledges();
+  //getPledges();
   fs.readFile("schools.json", 'utf8', function(err, data){
     if (err) {
       return console.log(err);
@@ -82,37 +82,20 @@ app.post('/Pledge', function(req, res){
   res.send(req.body);    // echo the result back
 });
 
-app.get('/RecentPledges', function(req, res){
-  var url_parts = url.parse(req.url, true);
-  var query = url_parts.query;
-  if (query.school) {
-    Pledge.find({'school': query.school})
-      .populate('pledges', 'name')
-      .exec(function(err, school) {
-      if (err) return console.error(err);
-      console.log(school.pledges);
-      res.send(school.pledges);
-    });
-  }
+app.get('/mapData', function(req, res){
+  getMapData(res);
 });
 
 
 function addPledge(pledge) {
-  School.findOne({'school': pledge.school}, function(err, SchoolId) {
+  School.findOne({'name': pledge.school}, function(err, SchoolObj) {
     if (err) return console.error(err);
-    var newPledge = new Pledge({ _school: SchoolId._id, name: pledge.firstName, initial: pledge.lastInitial, pledge: pledge.PledgeType});
-    //console.log(newPledge.name);
-    newPledge.save();
+    //var School = SchoolObj.toObject();
+    if(SchoolObj) {
+      SchoolObj._doc.pledges.push({ name: pledge.firstName, initial: pledge.lastInitial, pledgeType: pledge.PledgeType});
+      SchoolObj.save();
+    }
   });
-  console.log(result);
-
-  var result = Pledge.find({"school": pledge.school}, function(err, pledges) {
-    if (err) return console.error(err);
-    console.log(pledges);
-  });
-  //var wstream = fs.createWriteStream('pledges.txt');
-  //wstream.write(pledge);
-  //wstream.end();
 }
 
 function parseSchools() {
@@ -123,9 +106,9 @@ function parseSchools() {
     var schools = JSON.parse(data);
     for (var i=0;i<schools.SchoolList.length;i++) {
      var schoolObj = schools.SchoolList[i];
-     var school = new School({ school: schoolObj.Name, latitude: schoolObj.Lat, longitude: schoolObj.Long });
+     var schoolObg = new School({ name: schoolObj.Name, latitude: schoolObj.Lat, longitude: schoolObj.Long });
      console.log(school._id);
-     school.save();
+     schoolObj.save();
     }
     var result = School.find( function(err, schoolsies) {
       if (err) return console.error(err);
@@ -136,23 +119,36 @@ function parseSchools() {
 
 function getPledges() {
   var schoolList;
-  var result = School.find( function(err, schoolses) {
+  var result = School.find( function(err, schools) {
     if (err) return console.error(err);
-    for (var school in schoolses) {
+    for (var school in schools) {
       var schoolName = school.name;
     }
   });
-  //construct json schoolList
-  //Find all schools
-  //iterate through schools
-  //Find all pledges with school name
-  //add pledges to json object
-
-  //return json object
+  //Get array of schools
+  //avoid schools with no pledges
+  //reformat list to send to browser
+  //return school json
 }
 
-//construct school list
-//
+var getMapData = function(res) {
+  var schoolList = new Array();
+  var result = School.find( function(err, schools) {
+    if (err) return console.error(err);
+    for (var i=0;i<schools.length;i++) {
+      if(schools[i]._doc.pledges.length > 0) {
+        schoolList.push(schools[i]._doc)
+      }
+    }
+    res.send(JSON.stringify(schoolList));
+  });
+  //Get array of schools
+  //avoid schools with no pledges
+  //reformat list to send to browser
+  //return school json
+};
+
+
 
 function addSchool(school) {
 
