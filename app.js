@@ -37,6 +37,7 @@ db.once('open', function (callback) {
   });
   */
 
+
   //parseSchools();
   //var pledgeexample = new Pledge({ name: 'Alex', initial: 'J', pledge: 'gardener' });
   //pledgeexample.save();
@@ -79,7 +80,6 @@ app.get('/AllPledges', function(req, res) {
 app.post('/Pledge', function(req, res){
   //console.log('Post:' + req.body);      // your JSON
   addPledge(req.body);
-  res.send(req.body);    // echo the result back
 });
 
 app.get('/mapData', function(req, res){
@@ -94,6 +94,7 @@ function addPledge(pledge) {
     if(SchoolObj) {
       SchoolObj._doc.pledges.push({ name: pledge.firstName, initial: pledge.lastInitial, pledgeType: pledge.PledgeType});
       SchoolObj.save();
+      res.redirect('file:///C:/KeikiCorner/html/keiki_corner/map.html');
     }
   });
 }
@@ -106,7 +107,7 @@ function parseSchools() {
     var schools = JSON.parse(data);
     for (var i=0;i<schools.SchoolList.length;i++) {
      var schoolObj = schools.SchoolList[i];
-     var schoolObg = new School({ name: schoolObj.Name, latitude: schoolObj.Lat, longitude: schoolObj.Long });
+     var school = new School({ name: schoolObj.Name, latitude: schoolObj.Lat, longitude: schoolObj.Long });
      console.log(school._id);
      schoolObj.save();
     }
