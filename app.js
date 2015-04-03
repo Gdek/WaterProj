@@ -95,7 +95,7 @@ function addPledge(pledge, res) {
     if(SchoolObj) {
       SchoolObj._doc.pledges.push({ name: pledge.firstName, initial: pledge.lastInitial, pledgeType: pledge.PledgeType});
       SchoolObj.save();
-      res.redirect('http://54.187.197.244/keiki_corner/map.html')
+      res.redirect('http://54.187.197.244/keiki_corner/map.html');
     }
   });
 }
