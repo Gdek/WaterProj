@@ -2,7 +2,7 @@ var express    = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/Test');
+mongoose.connect('mongodb://localhost/KeikiCorner');
 var db = mongoose.connection;
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
