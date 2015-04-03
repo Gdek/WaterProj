@@ -2,7 +2,7 @@ var express    = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/KeikiCorner');
+mongoose.connect('mongodb://localhost/Test');
 var db = mongoose.connection;
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
@@ -79,7 +79,8 @@ app.get('/AllPledges', function(req, res) {
 
 app.post('/Pledge', function(req, res){
   //console.log('Post:' + req.body);      // your JSON
-  addPledge(req.body);
+  addPledge(req.body, res);
+  //res.send(req.body);
 });
 
 app.get('/mapData', function(req, res){
@@ -87,14 +88,14 @@ app.get('/mapData', function(req, res){
 });
 
 
-function addPledge(pledge) {
+function addPledge(pledge, res) {
   School.findOne({'name': pledge.school}, function(err, SchoolObj) {
     if (err) return console.error(err);
     //var School = SchoolObj.toObject();
     if(SchoolObj) {
       SchoolObj._doc.pledges.push({ name: pledge.firstName, initial: pledge.lastInitial, pledgeType: pledge.PledgeType});
       SchoolObj.save();
-      res.redirect('file:///C:/KeikiCorner/html/keiki_corner/map.html');
+      res.redirect('http://54.187.197.244/keiki_corner/map.html')
     }
   });
 }
