@@ -59,14 +59,14 @@ app.use(function (req, res, next) {
 
 app.listen(8080);
 app.get('/Schools', function(req, res){
-  console.log(req.body);
-  //getPledges();
-  fs.readFile("schools.json", 'utf8', function(err, data){
-    if (err) {
-      return console.log(err);
+  var schoolList = new Array();
+  var result = School.find( function(err, schools) {
+    if (err) return console.error(err);
+    for (var i=0;i<schools.length;i++) {
+       schoolList.push(schools[i]._doc.name)
     }
-    res.json(data);
-  })
+    res.send(JSON.stringify(schoolList));
+  });
 });
 
 app.get('/AllPledges', function(req, res) {
@@ -110,7 +110,7 @@ function parseSchools() {
      var schoolObj = schools.SchoolList[i];
      var school = new School({ name: schoolObj.Name, latitude: schoolObj.Lat, longitude: schoolObj.Long });
      console.log(school._id);
-     schoolObj.save();
+     school.save();
     }
     var result = School.find( function(err, schoolsies) {
       if (err) return console.error(err);
