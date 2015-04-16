@@ -60,13 +60,23 @@ app.use(function (req, res, next) {
 app.listen(8080);
 app.get('/Schools', function(req, res){
   var schoolList = new Array();
-  var result = School.find( function(err, schools) {
+  //var result = School.find( {sort: {Name: 1}}, function(err, schools) {
+  var result = School.find({}, null, {sort: {name: 1}}, function(err, schools) {
     if (err) return console.error(err);
     for (var i=0;i<schools.length;i++) {
+      var school = schools[i];
        schoolList.push(schools[i]._doc.name)
     }
     res.send(JSON.stringify(schoolList));
   });
+});
+
+app.post('/Test', function(req, res) {
+  res.send(req.body);
+});
+
+app.get('/PledgeMax', function(req, res) {
+  getPledgeMax(res);
 });
 
 app.get('/AllPledges', function(req, res) {
@@ -75,6 +85,10 @@ app.get('/AllPledges', function(req, res) {
         console.log(pledges);
         res.send(pledges);
       });
+});
+
+app.get('/LatestPledges', function(req, res) {
+  getLatestPledges(res);
 });
 
 app.post('/Pledge', function(req, res){
@@ -118,6 +132,26 @@ function parseSchools() {
     });
   });
 }
+
+var getPledgeMax = function(res) {
+  School.aggregate([
+    { $group: { _id:null,
+      max: {$max: { $size: "$pledges"}}
+    }}
+  ], function (err, result) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    res.send((result));
+  })
+};
+
+var getLatestPledges = function(res) {
+  School.aggregate({$unwind:'$pledges'}, {$sort:{'pledges.date':-1}}, {$limit: 10}, function(err, pledges) {
+    res.send(pledges);
+  });
+};
 
 function getPledges() {
   var schoolList;
